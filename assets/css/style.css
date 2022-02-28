@@ -343,8 +343,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: #fff;
-  padding-top: 100px;
+  /*background: #fff;*/
+  background-image: linear-gradient(white, rgba(22, 223, 126, 0.1));
+  padding-top: 82px;
 }
 
 #hero h1 {
@@ -402,6 +403,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #16df7e;
 }
 
+#hero .hero-img {
+  padding: 10px;
+}
+
 #hero .card {
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: .50rem;
@@ -426,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    min-height: 100vh;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -434,11 +439,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .hero-img {
     text-align: center;
-    width: 70%;
+    width: 80%;
   }
-  #hero .hero-img .card {
-    width: 70%;
-  }
+  
   #hero .hero-img img {
     width: 50%;
   }
